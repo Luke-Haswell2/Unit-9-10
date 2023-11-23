@@ -17,5 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dead Menu.unity
     guid: 938e8771704ef97499541fd93572301e
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 21c72d0bbe9dc2d459248d2574a003c1, type: 2}
   m_UseUCBPForAssetBundles: 0
