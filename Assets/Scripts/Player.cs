@@ -55,7 +55,10 @@ public class Player : MonoBehaviour
 
     public void PointerClickJump()
     {
-        jump = true;
+        if (IsGrounded())
+        {
+            jump = true;
+        }
     }
 
     public void PointerUpJump()
