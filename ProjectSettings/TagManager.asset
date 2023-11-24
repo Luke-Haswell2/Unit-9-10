@@ -8,7 +8,6 @@ TagManager:
   - Enemy
   - Ground
   - Win
-  - EnemyC
   layers:
   - Default
   - TransparentFX
@@ -16,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ground
+  - Enemy
+  - Player
   - 
   - 
   - 
