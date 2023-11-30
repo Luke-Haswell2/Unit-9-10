@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float FollowSpeed = 2f;
-    public float yOffset = 0.5f;
+    public float FollowSpeed = 1f;
+    public float yOffset = 2.25f;
+    public float yLevel = -0.59f;
     public Transform target;
 
     void LateUpdate()
     {
-        Vector3 newPos = new Vector3(target.position.x, target.position.y + 1, -10f);
+        //target.position.y + yOffset
+        Vector3 newPos = new Vector3(target.position.x, yLevel, -10f);
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
     }
 }
