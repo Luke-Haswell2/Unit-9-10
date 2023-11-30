@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
         moveRight = false;
     }
 
-    public void PointerClickJump()
+    public void PointerDownJump()
     {
         if (IsGrounded())
         {
