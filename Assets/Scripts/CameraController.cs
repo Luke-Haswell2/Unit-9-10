@@ -11,7 +11,6 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        //target.position.y + yOffset
         Vector3 newPos = new Vector3(target.position.x, yLevel, -10f);
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
     }

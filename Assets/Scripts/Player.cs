@@ -83,11 +83,6 @@ public class Player : MonoBehaviour
             LoadDeath();
         }
 
-        if (IsGrounded())
-        {
-            print("grounded");
-        }
-
         if (isJumping == true)
         {
             anim.SetBool("Jump", true);
@@ -143,7 +138,6 @@ public class Player : MonoBehaviour
         Vector2 direction = Vector2.down;
         float distance = 0.3f;
 
-        Debug.DrawRay(position, direction * distance, Color.blue);
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
         if (hit.collider != null)
         {
@@ -159,7 +153,6 @@ public class Player : MonoBehaviour
         Vector2 direction = Vector2.right;
         float distance = 0.4f;
 
-        Debug.DrawRay(position, direction * distance, Color.green);
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, enemyLayer);
         if (hit.collider != null)
         {
@@ -175,7 +168,6 @@ public class Player : MonoBehaviour
         Vector2 direction = Vector2.left;
         float distance = 0.4f;
 
-        Debug.DrawRay(position, direction * distance, Color.green);
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, enemyLayer);
         if (hit.collider != null)
         {

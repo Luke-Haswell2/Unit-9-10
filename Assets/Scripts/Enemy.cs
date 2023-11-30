@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     {
         anim.SetBool("Walk", false);
 
-        if (transform.position.x - 5 <= Player.transform.position.x)
+        if (transform.position.x - 7 <= Player.transform.position.x)
         {
             active = true;
         }
@@ -46,7 +46,6 @@ public class Enemy : MonoBehaviour
         Vector2 direction = Vector2.up;
         float distance = 0.2f;
 
-        Debug.DrawRay(position, direction * distance, Color.yellow);
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, playerLayer);
         if (hit.collider != null)
         {
